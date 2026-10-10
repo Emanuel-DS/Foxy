@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <style>
+         .text-foxy {
+            color: #b2413f !important;
+        }
+
+        .btn-foxy {
+            background-color: #b2413f;
+            color: #ffffff;
+            border: none;
+        }
+
+        .btn-foxy:hover {
+            background-color: #8e3230;
+            color: #ffffff;
+        }
+
+        .btn-outline-foxy {
+            border: 2px solid #b2413f;
+            color: #b2413f;
+        }
+
+        .btn-outline-foxy:hover {
+            background-color: #b2413f;
+            color: #ffffff;
+        }
+
+        .hero-banner {
+            background: linear-gradient(135deg, #b2413f 0%, #000000 100%);
+            color: #fff;
+        }
+
+        .card-custom {
+            border: 2px solid #a74439;
+        }
+        .nav-pills .nav-link.active {
+        background-color: #b2413f !important;
+        }
+
+        .nav-pills .nav-link {
+        color: #b2413f;
+}
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pelúcia Foxy - Store</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+        
+</head>
+<body class="bg-light">
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow">
+        <div class="container">
+            <a class="navbar-brand text-foxy fw-bold fs-3 text-decoration-none" href="#">FoxyStore </a>            
+        </div>
+    </nav>
+
+    <header class="hero-banner text-center py-5 mb-5 shadow">
+        <div class="container">
+            <h1 class="display-4 fw-bold text-foxy">Boneco de Pelúcia Foxy</h1>
+            <p class="lead">O melhor animatronic do mundo dos jogos direto para a sua coleção!</p>
+        </div>
+    </header>
+    <main class="container my-5">
+        <div class="row g-4">
+            
+            <div class="col-lg-6">
+                <div class="card card-custom shadow-lg rounded-4 overflow-hidden h-100">
+                    <div class="card-body p-4 d-flex flex-column justify-content-center">
+                        
+                        <ul class="nav nav-pills mb-3 nav-justified" id="pills-tab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active fw-bold" id="pills-foto-tab" data-bs-toggle="pill" data-bs-target="#pills-foto" type="button" role="tab">
+                             Foto
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link fw-bold" id="pills-video-tab" data-bs-toggle="pill" data-bs-target="#pills-video" type="button" role="tab">
+                             Vídeo
+                            </button>
+                        </li>
+                    </ul>
+                    
+                    <div class="tab-content" id="pills-tabContent">
+                        <div class="tab-pane fade show active" id="pills-foto" role="tabpanel">
+                            <div class="position-relative">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7KYFEjpuFQM2wn0zhRssqde9gUh9iHE4N7CrxjLyESg&s=10" class="img-fluid rounded-3 w-100 shadow-sm" alt="Foto da Pelúcia">
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="pills-video" role="tabpanel">
+                            <div class="ratio ratio-16x9 rounded-3 overflow-hidden shadow-sm">
+                                <iframe 
+                                    src="https://www.youtube.com/embed/cYzfJaWqKRk" 
+                                    title="Review do Boneco do Foxy" 
+                                    allowfullscreen>
+                                </iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+                        <div class="mt-4 p-3 bg-light rounded-3 border">
+                            <small class="text-decoration-line-through text-muted d-block">De R$ 299,90</small>
+                            <span class="fs-1 fw-bold text-foxy">R$ 189,90</span>
+                            <p class="text-muted mb-0">Em até 3x sem juros no cartão</p>
+                        </div>
+
+                        <button class="btn btn-foxy btn-lg mt-4 fw-bold shadow">Comprar Agora</button>
+                    </div>
+                </div>
+            </div>
+    </main>
+    <footer class="bg-dark text-white text-center py-4 mt-5">
+        <div class="container">
+            <p class="mb-0">&copy; 2026 FoxyStore - Todos os direitos reservados.</p>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
